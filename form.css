@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 21px;
+}
+
+body {
+    background-color: #141C24;
+}
+
+.reg-title {
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.log-title {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-input::placeholder {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-btn {
+    display: inline-block;
+    position: relative;
+    z-index: 122;
+    padding: 15px 70px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background: url("img/button.svg") center/cover no-repeat;
+    color: black;
+    font-size: 24px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.oleg1 {
+    display: inline-block;
+    width: 80%;
+    color: #FFF;
+    /* H7 */
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+.social-links img {
+    width: 24.96px;
+    height: 24.96px;
+}
+
+.footer-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.container {
+    width: 25%;
+    margin: auto;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    padding: 25px 0 18px 24px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.bottom-wrapper input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.qwerty{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.bw-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.bw-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.qwerty1{
+    width: 100%;
+    margin: 0;
+}
+
+.footer-text {
+    margin-top: 43px;
+    margin-bottom: 18px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 43px auto 18px auto;
+    position: relative;
+    width: fit-content;
+
+}
+.footer-text::before{
+    content: "";
+    width: 200%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.50);
+    position: absolute;
+    left: -220%;
+    top: 50%;
+}
+
+.footer-text::after{
+    content: "";
+    width: 200%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.50);
+    position: absolute;
+    right: -220%;
+    top: 50%;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links img{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media(max-width:1500px){
+    .container{
+        width: 50%;
+    }
+}
+
+@media (max-width:970px) {
+    .container{
+        width: 75%;
+    }
+
+    .qwerty{
+        flex-direction: column-reverse;
+    }
+    .bw-right{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .bw-left{
+        width: 100%;
+    }
+}
+@media (max-width:550px){
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width:450px){
+    .section-btn{
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper{
+        flex-direction: column;
+    }
+}
+
+
+
